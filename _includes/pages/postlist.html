@@ -1,0 +1,24 @@
+<section class="content">
+    {% if site.posts.size == 0 %}
+    {% else %}
+    {% for post in site.posts %}
+    <div class="list-item" href="{{ site.baseurl }}{{ post.url }}">
+        <div class="list-post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="list-post-info">
+            {% if post.author %}
+            <i class="fa user-edit"></i>
+            {% for author in post.author %}
+            {{ author }}<span class="space">·</span>
+            {% endfor %}
+            {% endif%}
+            <i class="fa clock"></i><time>{{ post.date | date: "%Y-%m-%d" }}</time>
+        </div>
+        {% if post.description %}
+        <p class="article-description">{{ post.description }}</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+    {% endif %}
+</section>

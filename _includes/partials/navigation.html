@@ -1,0 +1,15 @@
+<div class="site-nav">
+    <div class="site-nav-avatar">
+        <img src="{{ site.baseurl }}/{{ site.images }}/avatar.jpg">
+    </div>
+    <p class="site-nav-title">ari[Ma]'s<br>Notebook</p>
+    <ul class="site-nav-menu">
+        {% for nav in site.navs %}
+        <li class="site-nav-item">
+            {% assign name = nav[0] %}
+            {% assign path = nav[1] %}
+            <a class="nav-btn" href="{{ site.baseurl }}{{ path }}">{{ __.nav[name] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

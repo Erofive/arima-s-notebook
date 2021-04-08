@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta name="renderer" content="webkit">
+        <title>{% if page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+        <link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/style.css">
+        {% if site.favicon.enable %}
+        <link rel="shortcut icon" href="{{ site.baseurl }}{{ site.favicon.path }}">
+        {% endif %}
+    </head>
+    <body>
+        {% include partials/header.html %}
+
+        <main id="main" class="main">
+            {{ content }}
+        </main>
+
+        {% include partials/navigation.html %}
+
+        {% if site.b2t == true %}
+        {% include helper/b2t.html %}
+        {% endif %}
+
+        {% unless page.footer == false %}
+        {% include partials/footer.html %}
+        {% endunless %}
+
+        {% include scripts/scripts.html %}
+    </body>
+</html>

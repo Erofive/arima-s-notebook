@@ -1,0 +1,14 @@
+<div class="content page">
+    <div class="page-head">
+        <div class="page-title">{{ page.title }}</div>
+        <div class="page-info">
+            {% if page.author %}
+            {% for author in page.author %}
+            {{ author }}<span class="space">·</span>
+            {% endfor %}
+            {% endif%}
+            {% include helper/description.html %}
+        </div>
+    </div>
+    {{ content }}
+</div>

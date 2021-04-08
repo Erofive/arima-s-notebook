@@ -1,0 +1,4 @@
+{% for script in site.vendors %}
+{% assign path = script[1] %}
+<script src="{{ path }}"></script>
+{% endfor %}

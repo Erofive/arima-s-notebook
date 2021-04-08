@@ -1,0 +1,33 @@
+.footer {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+
+    .fotex {
+        margin: 0 auto;
+        width: fit-content;
+        font: {
+            size: 25px;
+            family: "Ubuntu-r";
+        }
+    }
+
+    .sakura-ro {
+        background: {
+            image: url("/assets/images/sakura.svg");
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+        width: 30px;
+        height: 30px;
+        opacity: .3;
+        margin: 0 auto;
+        animation: sakura-rotate 12s infinite linear;
+        -webkit-animation: sakura-rotate 12s infinite linear;
+    }
+}

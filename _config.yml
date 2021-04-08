@@ -1,0 +1,93 @@
+####################
+##    ariMa's     ##
+##    Notebook    ##
+####################
+
+# Basic
+name: "ari[Ma]'s Notebook"
+url: "/"
+language: zh-Hans
+
+# URL
+baseurl: ""
+# baseurl - For root domain
+permalink: /:year-:month-:day/:title/
+
+# Favicon
+favicon:
+  enable: true
+  path: /assets/images/avatar.jpg
+
+# Maekdown
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Site Navigations | 导航
+navs:
+  home: /
+  postlist: /postlist/
+  notes: /arimasnotes/
+
+# Scopes
+defaults:
+  - scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  - scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+# Sass
+sass:
+  sass_dir: /assets/css
+  style: :compressed
+
+# b2t
+b2t: true
+
+# Highlighter
+highlighter: rouge
+highlight:
+  line_number: true
+
+# Assets
+css: assets/css
+js: assets/js
+images: assets/images
+
+
+#############
+#  Scripts  #
+#############
+vendors:
+  # External Version: 3.6.0
+  jquery: //cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
+
+  # External Version: 1.9.7
+  jq-lazyload: //cdn.bootcdn.net/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js
+
+  # 页面加载lazyload
+  lazyload: /assets/js/lazyload.js
+
+  # 雪花特效
+  snow-fall: /assets/js/snow-fall.js
+
+  # 调整高度
+  heightadjust: /assets/js/height-adjust.js
+
+  # 显示侧边导航栏
+  shownav: /assets/js/shownav.js
+
+  # 顶部进度条
+  pbar: /assets/js/header/progressbar.js
+
+  # b2t按钮
+  b2t: /assets/js/b2t.js
+
+  # 鼠标效果
+  mouse: /assets/js/mouseEvent.js

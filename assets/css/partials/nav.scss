@@ -1,0 +1,66 @@
+.site-nav {
+    z-index: 4;
+    display: block;
+    width: 0;
+    background-color: #fff;
+    border-left: 1px solid #C0C0C0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+    transition: transform .2s, width .2s;
+
+    &.on {
+        width: 250px;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+    &-avatar {
+        position: relative;
+        padding: 40px 0 30px;
+        
+
+        img {
+            margin: 0 auto;
+            padding: 4px;
+            border: 3px solid #FAFAFA;
+            height: 95px;
+            width: 95px;
+        }
+    }
+
+    &-title {
+        text-align: center;
+        letter-spacing: 1.5px;
+        font: {
+            weight: 900;
+            family: 'Ubuntu-r', sans-serif;
+        }
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    &-menu {
+        list-style: none;
+        height: auto;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    &-item {
+        font: {
+            size: 22px;
+            family: "Yiwen-r", "YouYuan";
+        }
+        padding: 0 10px;
+        margin: 15px 0;
+        border-left: 1px solid rgb(190, 190, 190);
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.post {
+    font-family: "Yiwen-r";
+
+    &-back {
+        padding: 1px;
+        user-select: none;
+        -webkit-user-select: none;
+
+        a {text-decoration: none;}
+    }
+
+    &-head {
+        border-bottom: 2px solid #404040;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &-title {
+        font: {
+            size: 2rem;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

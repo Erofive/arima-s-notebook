@@ -1,0 +1,60 @@
+.site-header {
+    color: #777;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translateX(0);
+    transition: transform .3s linear, background-color .4s ease;
+
+    &.on {
+        transform: translateX(-250px);
+    }
+
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        .site-header {color: #464646;}
+    }
+
+    @media (max-width: 38em) {
+        background-color: rgba(255, 255, 255, 1);
+        border-bottom: 2px solid #464646;
+    }
+
+    .sitelogo-f {
+        user-select: none;
+        -webkit-user-select: none;
+        opacity: 1;
+        text-decoration: none;
+        margin: 6px 13px;
+        float: left;
+        font: {
+            size: 30px;
+            family: "HYnmt-r";
+        }
+
+        @media (max-width: 360px) {
+            size: 24px;
+            margin: 8px 8px;
+        }
+    }
+
+    .site-cont-bar {
+        float: right;
+        margin: 20px 1rem;
+
+        .toggle{
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: {
+                image: url("/assets/images/fa/bars.svg");
+                position: center;
+                size: cover;
+                repeat: no-repeat;
+            }
+        }
+    }
+}
