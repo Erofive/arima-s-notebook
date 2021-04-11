@@ -50,32 +50,30 @@ sass:
 # b2t
 b2t: true
 
+# aplayer
+aplayer: true
+
 # Highlighter
 highlighter: rouge
 highlight:
   line_number: true
-
-# Assets
-css: assets/css
-js: assets/js
-images: assets/images
 
 
 #############
 #  Scripts  #
 #############
 vendors:
-  # External Version: 3.6.0
+  # Version: 3.6.0 | External
   jquery: //cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
 
-  # External Version: 1.9.7
+  # Version: 1.9.7 | External
   jq-lazyload: //cdn.bootcdn.net/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js
+
+  # version 1.10.1 | Internal
+  aplayer: /assets/js/APlayer.min.js
 
   # 页面加载lazyload
   lazyload: /assets/js/lazyload.js
-
-  # 雪花特效
-  snow-fall: /assets/js/snow-fall.js
 
   # 调整高度
   heightadjust: /assets/js/height-adjust.js

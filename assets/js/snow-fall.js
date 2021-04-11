@@ -117,7 +117,9 @@ function snow_fall_dynamic(){
     }
 }
 
-$(document).ready(snow_fall_dynamic())
+$(document).ready(function(){
+    snow_fall_dynamic();
+});
 window.onresize = function(){
     snow_fall_dynamic();
 }

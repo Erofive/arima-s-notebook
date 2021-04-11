@@ -5,9 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta name="renderer" content="webkit">
         <title>{% if page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-        <link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/style.css">
         {% if site.favicon.enable %}
         <link rel="shortcut icon" href="{{ site.baseurl }}{{ site.favicon.path }}">
+        {% endif %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+        {% if site.aplayer %}
+        <!--APlayer Style-->
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/helper/APlayer.min.css">
         {% endif %}
     </head>
     <body>
@@ -23,10 +27,19 @@
         {% include helper/b2t.html %}
         {% endif %}
 
+        {% if site.aplayer %}
+        {% include helper/aplayer.html %}
+        {% endif %}
+
         {% unless page.footer == false %}
         {% include partials/footer.html %}
         {% endunless %}
 
         {% include scripts/scripts.html %}
+
+        {% if page.snowfall %}
+        <!--Snow Fall-->
+        <script src="{{ site.baseurl }}/assets/js/snow-fall.js"></script>
+        {% endif %}
     </body>
 </html>
