@@ -37,6 +37,10 @@
 
         {% include scripts/scripts.html %}
 
+        {% if site.mathjax %}
+        {% include helper/mathjax.html %}
+        {% endif %}
+
         {% if page.snowfall %}
         <!--Snow Fall-->
         <script src="{{ site.baseurl }}/assets/js/snow-fall.js"></script>

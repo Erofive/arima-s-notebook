@@ -53,6 +53,9 @@ b2t: true
 # aplayer
 aplayer: true
 
+# mathjax
+mathjax: true
+
 # Highlighter
 highlighter: rouge
 highlight:

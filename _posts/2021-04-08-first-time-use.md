@@ -62,4 +62,3 @@ permalink定义了这个页面的永久链接（permanent link）。
 <ruby>自転車<rt>じてんしゃ</rt></ruby>
 
 总之遇到问题再解决就是了，有什么需要或者建议可以再联系我。
-
