@@ -27,7 +27,7 @@ kramdown:
 navs:
   home: /
   postlist: /postlist/
-  notes: /arimasnotes/
+  notes: /arimanotes/
 
 # Scopes
 defaults:
