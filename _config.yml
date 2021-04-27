@@ -28,6 +28,7 @@ navs:
   home: /
   postlist: /postlist/
   notes: /arimanotes/
+  sheets: /sheets/
 
 # Scopes
 defaults:
