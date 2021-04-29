@@ -24,10 +24,16 @@ $(document).mousemove(function(event){
     }, 40);
 });
 
-$('a, .site-cont-bar').mousemove(function(){
+$('a, .site-cont-bar').mousemove(function(event){
     $('.mouse-ring').addClass('on');
+    let posX = event.pageX;
+    let posY = event.pageY;
+    $('.mouse-ring').attr('style', 'left: ' + posX + 'px; top: ' + posY + 'px;');
 })
 
-$('a, .site-cont-bar').mouseleave(function(){
+$('a, .site-cont-bar').mouseleave(function(event){
     $('.mouse-ring').removeClass('on');
+    let posX = event.pageX - curadius;
+    let posY = event.pageY - curadius;
+    $('.mouse-ring').attr('style', 'left: ' + posX + 'px; top: ' + posY + 'px;');
 })

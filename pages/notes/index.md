@@ -3,6 +3,7 @@ title: 马老师の笔记本
 permalink: /arimanotes/
 layout: page
 description: 有马的日语学习笔记本。
+headerpic: https://z3.ax1x.com/2021/04/29/gkI4eO.jpg
 ---
 
 1.*名*は*名*です | ~是（は）~（です）

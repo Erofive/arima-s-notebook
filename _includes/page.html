@@ -8,6 +8,9 @@
             {% endfor %}
             {% endif%}
             {% include helper/description.html %}
+            {% if page.headerpic %}
+            <img src="{{ page.headerpic }}" style="border: 0; width: 100%; margin-top: 5px;">
+            {% endif %}
         </div>
     </div>
     {{ content }}
