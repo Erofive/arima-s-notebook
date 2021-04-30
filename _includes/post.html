@@ -3,13 +3,17 @@
         <div class="post-back"><a href="{{ site.baseurl }}/postlist/">{{ __.post["back2list"] }}</a></div>
         <div class="post-title">{{ page.title }}</div>
         <div class="post-info">
+            <!--Author-->
             {% if page.author %}
             {% for author in page.author %}
             {{ author }}<span class="space">·</span>
             {% endfor %}
             {% endif%}
             <span>{{ __.post["created"] }}{{ page.date | date: "%Y-%m-%d" }}</span>
-            {% include helper/description.html %}
+            <!--Dexcription-->
+            {% if page.description %}
+            <p class="article-description">{{ page.description }}</p>
+            {% endif %}
         </div>
     </div>
     {{ content }}

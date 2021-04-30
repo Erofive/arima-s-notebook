@@ -2,12 +2,17 @@
     <div class="page-head">
         <div class="page-title">{{ page.title }}</div>
         <div class="page-info">
+            <!--Author-->
             {% if page.author %}
             {% for author in page.author %}
             {{ author }}<span class="space">·</span>
             {% endfor %}
             {% endif%}
-            {% include helper/description.html %}
+            <!--Dexcription-->
+            {% if page.description %}
+            <p class="article-description">{{ page.description }}</p>
+            {% endif %}
+            <!--Header Pic-->
             {% if page.headerpic %}
             <img src="{{ page.headerpic }}" style="border: 0; width: 100%; margin-top: 5px;">
             {% endif %}
