@@ -9,7 +9,7 @@ url: "/"
 language: zh-Hans
 
 # URL
-baseurl: ""
+baseurl: "/arima-s-notebook"
 # baseurl - For root domain
 permalink: /:year-:month-:day/:title/
 
