@@ -1,7 +1,14 @@
-# Arima's Notebook Blog
+# Arima's Notebook
 
-「马老师的笔记本」博客的同步用仓库。
+> 「Arima's Notebook」
+>
+> 「马老师的笔记本」
 
-本体目前部署在gitee演示/使用。
+未完善的一个Jekyll theme.
 
-还不够完善，也没有单独分出模板。
+咕咕咕，有空再更。
+
+
+
+
+
