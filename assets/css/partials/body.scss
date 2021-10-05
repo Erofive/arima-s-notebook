@@ -55,7 +55,7 @@
     z-index: 0;
     position: absolute;
     background: {
-        image: url("/arima-s-notebook/assets/images/bg.webp");
+        image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/arima-s-notebook/assets/images/bg.webp");
         position: center top;
         size: cover;
         attachment: fixed;
