@@ -15,12 +15,11 @@
         {% endif %}
     </head>
     <body>
-        {{ site.baseurl }}
         {% include partials/header.html %}
 
-        <main id="main" class="main">
-            {{ content }}
-        </main>
+    <div id="main" class="main">
+        {{ content }}
+    </div>
 
         {% include partials/navigation.html %}
 

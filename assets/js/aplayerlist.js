@@ -6,7 +6,7 @@ const ap = new APlayer({
     audio: [{
         name: '聞こえていますか僕らの声が',
         artist: '煉獄小僧',
-        url: '/assets/src/kbk/kbk.mp3',
-        cover: '/assets/src/kbk/Cover.jpg',
+        url: '/arima-s-notebook/assets/src/kbk/kbk.mp3',
+        cover: '/arima-s-notebook/assets/src/kbk/Cover.jpg',
     }]
 });

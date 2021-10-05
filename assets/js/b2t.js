@@ -9,8 +9,7 @@ $(document).ready(function(){
     $(".b2t").click(function() {
         $('body,html').animate({
             scrollTop: 0
-        },
-        300);
+        }, 300);
         return false;
     });
 })

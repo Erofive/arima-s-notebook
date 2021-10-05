@@ -9,8 +9,7 @@ url: "/"
 language: zh-Hans
 
 # URL
-baseurl: ""
-# baseurl - For root domain
+baseurl: "/arima-s-notebook"
 permalink: /:year-:month-:day/:title/
 
 # Favicon
@@ -67,14 +66,14 @@ highlight:
 #  Scripts  #
 #############
 vendors:
-  # Version: 3.6.0 | External
-  jquery: //cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
+  # JQuery
+  jquery: /assets/js/jquery-3.6.0.min.js?v=3.6.0
 
-  # Version: 1.9.7 | External
-  jq-lazyload: //cdn.bootcdn.net/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js
+  # jquery Lazyload
+  jq-lazyload: /assets/js/jquery.lazyload.min.js?v=1.9.7
 
-  # version 1.10.1 | Internal
-  aplayer: /assets/js/APlayer.min.js
+  # Aplayer
+  aplayer: /assets/js/APlayer.min.js?v=1.10.1
 
   # 页面加载lazyload
   lazyload: /assets/js/lazyload.js

@@ -1,5 +1,5 @@
 function click1(){
-    $('i.toggle').attr('style', 'background-image: url("/assets/images/fa/times.svg");');
+    $('i.toggle').attr('style', 'background-image: url("/arima-s-notebook/assets/images/fa/times.svg");');
     $('.site-nav').addClass('on');
     $('.main').addClass('on');
     $('.site-header').addClass('on');
@@ -21,14 +21,12 @@ $('i.toggle').click(function(){
 });
 
 $('.site-header.site-nav').mouseleave(function(){
-    //$('.site-nav').removeClass('on');
     $('i.toggle').attr('style', '');
 });
 
 $('.main').click(function(){
     $('.site-nav').removeClass('on');
 
-    // console.log($('.main').css('transform'));
     if($('.main').css('transform') == 'matrix(1, 0, 0, 1, -250, 0)'){
         $('.main').removeClass('on');
         $('.site-header').removeClass('on');
