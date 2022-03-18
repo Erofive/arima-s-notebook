@@ -9,7 +9,7 @@ url: ""
 language: zh-Hans
 
 # URL
-baseurl: ""
+baseurl: "/arima-s-notebook/"
 permalink: /:year-:month-:day/:title/
 
 # Maekdown
