@@ -9,7 +9,7 @@ url: ""
 language: zh-Hans
 
 # URL
-baseurl: "/arima-s-notebook/"
+baseurl: "/arima-s-notebook"
 permalink: /:year-:month-:day/:title/
 
 # Maekdown
@@ -36,7 +36,7 @@ defaults:
 
 # Sass
 sass:
-  sass_dir: /assets/css
+  sass_dir: /assets
   style: :compressed
 
 # Highlighter
