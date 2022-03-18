@@ -3,22 +3,16 @@
 
 @import "base";
 
-@import "dynamic/sakura-rotate";
-@import "dynamic/snow-fall";
-
 @import "fonts/fontface";
 
 @import "highlighter/highlighter";
 
-@import "helper/b2t";
-@import "helper/description";
-@import "helper/cursor";
-
+@import "partials/b2t";
 @import "partials/body";
 @import "partials/footer";
 @import "partials/header";
 @import "partials/nav";
 @import "partials/page";
 @import "partials/post";
-@import "partials/progressbar";
+@import "partials/processbar";
 @import "partials/scrollbar";

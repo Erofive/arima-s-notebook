@@ -1,9 +1,8 @@
 .footer {
-    z-index: 2;
-    position: relative;
     width: 100%;
     bottom: 0;
-    margin-bottom: 5px;
+    padding: 5px 0;
+    border-top: 1px dashed blck;
     user-select: none;
     -webkit-user-select: none;
 
@@ -18,7 +17,7 @@
 
     .sakura-ro {
         background: {
-            image: url("/arima-s-notebook/assets/images/sakura.svg");
+            image: url("/assets/images/sakura.svg");
             position: center;
             repeat: no-repeat;
             size: cover;
@@ -29,5 +28,14 @@
         margin: 0 auto;
         animation: sakura-rotate 12s infinite linear;
         -webkit-animation: sakura-rotate 12s infinite linear;
+    }
+}
+
+@keyframes sakura-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

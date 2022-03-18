@@ -1,5 +1,5 @@
 .main {
-    transform: translateX(0);
+    height: 100%;
     transition: transform .3s linear;
 
     a {
@@ -15,7 +15,6 @@
     max-width: 38rem;
     margin: 0 auto;
     padding: 4rem 2rem 1rem;
-    z-index: 2;
 
     hr {
         border: 0;
@@ -23,7 +22,7 @@
         margin: 1rem auto;
 
         background: {
-            image: url("/arima-s-notebook/assets/images/hr-img.png");
+            image: url("/assets/images/hr-img.png");
             repeat: no-repeat;
             position: center;
         }
@@ -37,41 +36,40 @@
     z-index: 1;
     position: relative;
 
-    ::before {
+    &::before {
         content: '';
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 1;
+        z-index: 0;
         background-attachment: fixed;
     }
 }
 
+.filter-dot {
+    box-sizing: inherit;
+
+    &::before {
+        background-image: url("/assets/images/dot.gif");
+    }
+}
+
 .bg {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
-    position: absolute;
     background: {
-        image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/arima-s-notebook/assets/images/bg.webp");
+        image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/assets/images/bg.webp");
         position: center top;
         size: cover;
         attachment: fixed;
     }
 }
 
-.filter-dot {
-    box-sizing: inherit;
-    background-image: url("/arima-s-notebook/assets/images/dot.gif");
-}
-
 .container {
     max-width: 38rem;
     margin: 0 auto;
-    height: 100%;
-    z-index: 2;
 
     .center-text {
         position: relative;
@@ -81,6 +79,8 @@
     .title {
         color: #fff;
         mix-blend-mode: lighten;
+        user-select: none;
+
         font: {
             size: 4rem;
             family: "Ubuntu-r";
@@ -90,57 +90,55 @@
             font-size: 3.5rem;
         }
     }
+
+    .headertext {
+        height: fit-content;
+        width: fit-content;
+        color: #eaeadf;
+        background: rgba(0,0,0,.5);
+        margin-top: 22px;
+        padding: 15px;
+        letter-spacing: 0;
+        border-radius: 10px;
+        box-sizing: initial;
+    
+        font: {
+            size: 1rem;
+            weight: bold;
+            family: "SourceHanSans";
+        }
+        word-break: break-all;
+    
+        p {
+            margin: 1rem 0;
+            opacity: 1;
+        }
+    
+        .fa {
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+            overflow: hidden;
+            background-blend-mode: lighten;
+        }
+    
+        .quote-left {
+            background: url("/assets/images/fa/quote-left.svg") center no-repeat;
+        }
+    
+        .quote-right {
+            background: url("/assets/images/fa/quote-right.svg") center no-repeat;
+        }
+    }
 }
-
-.headertext {
-    height: fit-content;
-    width: fit-content;
-    color: #eaeadf;
-    background: rgba(0,0,0,.5);
-    margin-top: 22px;
-    padding: 15px;
-    letter-spacing: 0;
-    border-radius: 10px;
-    box-sizing: initial;
-
-    font: {
-        size: 1rem;
-        weight: bold;
-        family: "SourceHanSans";
-    }
-    word-break: break-all;
-
-    p {
-        margin: 1rem 0;
-        opacity: 1;
-    }
-
-    .fa {
-        display: inline-block;
-        height: 16px;
-        width: 16px;
-        overflow: hidden;
-        background-blend-mode: lighten;
-    }
-
-    .quote-left {
-        background: url("/arima-s-notebook/assets/images/fa/quote-left.svg") center no-repeat;
-    }
-
-    .quote-right {
-        background: url("/arima-s-notebook/assets/images/fa/quote-right.svg") center no-repeat;
-    }
-}
-
 
 // postlist
 .list {
     &-item {
         font-family: "SourceHanSans";
         border: 2px solid #a0a0a0;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px #404040;
-        margin: 1rem 0;
+        box-shadow: 10px 10px 7px #404040;
+        margin: 2rem 0;
         padding: 1rem 1.5rem;
         user-select: none;
         -webkit-user-select: none;
@@ -161,7 +159,7 @@
             width: 15px;
             height: 15px;
             background: {
-                image: url("/arima-s-notebook/assets/images/fa/clock.svg");
+                image: url("/assets/images/fa/clock.svg");
                 position: center;
                 size: cover;
                 repeat: no-repeat;
@@ -174,12 +172,21 @@
             width: 15px;
             height: 15px;
             background: {
-                image: url("/arima-s-notebook/assets/images/fa/user-edit.svg");
+                image: url("/assets/images/fa/user-edit.svg");
                 position: center;
                 size: cover;
                 repeat: no-repeat;
             }
         }
+    }
+}
+
+.article-description {
+    margin: 18px 0 1rem;
+
+    font: {
+        family: "SourceHanSans";
+        size: 18px;
     }
 }
 

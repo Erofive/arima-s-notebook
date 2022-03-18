@@ -1,14 +1,6 @@
 .post {
     font-family: "SourceHanSans";
 
-    &-back {
-        padding: 1px;
-        user-select: none;
-        -webkit-user-select: none;
-
-        a {text-decoration: none;}
-    }
-
     &-head {
         border-bottom: 2px solid #404040;
         margin-bottom: 1rem;
