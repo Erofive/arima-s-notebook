@@ -22,7 +22,7 @@
         margin: 1rem auto;
 
         background: {
-            image: url("/assets/images/hr-img.png");
+            image: url("/arima-s-notebook/assets/images/hr-img.png");
             repeat: no-repeat;
             position: center;
         }
@@ -52,7 +52,7 @@
     box-sizing: inherit;
 
     &::before {
-        background-image: url("/assets/images/dot.gif");
+        background-image: url("/arima-s-notebook/assets/images/dot.gif");
     }
 }
 
@@ -60,7 +60,7 @@
     height: 100vh;
     z-index: 0;
     background: {
-        image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/assets/images/bg.webp");
+        image: linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/arima-s-notebook/assets/images/bg.webp");
         position: center top;
         size: cover;
         attachment: fixed;
@@ -123,11 +123,11 @@
         }
     
         .quote-left {
-            background: url("/assets/images/fa/quote-left.svg") center no-repeat;
+            background: url("/arima-s-notebook/assets/images/fa/quote-left.svg") center no-repeat;
         }
     
         .quote-right {
-            background: url("/assets/images/fa/quote-right.svg") center no-repeat;
+            background: url("/arima-s-notebook/assets/images/fa/quote-right.svg") center no-repeat;
         }
     }
 }
@@ -159,7 +159,7 @@
             width: 15px;
             height: 15px;
             background: {
-                image: url("/assets/images/fa/clock.svg");
+                image: url("/arima-s-notebook/assets/images/fa/clock.svg");
                 position: center;
                 size: cover;
                 repeat: no-repeat;
@@ -172,7 +172,7 @@
             width: 15px;
             height: 15px;
             background: {
-                image: url("/assets/images/fa/user-edit.svg");
+                image: url("/arima-s-notebook/assets/images/fa/user-edit.svg");
                 position: center;
                 size: cover;
                 repeat: no-repeat;

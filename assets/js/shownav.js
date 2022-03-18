@@ -1,5 +1,5 @@
 function click1(){
-    $('i.toggle').attr('style', 'background-image: url("/assets/images/fa/times.svg");');
+    $('i.toggle').attr('style', 'background-image: url("/arima-s-notebook/assets/images/fa/times.svg");');
     $('.site-nav').addClass('on');
     $('.main').addClass('on');
     $('.site-header').addClass('on');

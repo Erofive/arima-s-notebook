@@ -5,7 +5,7 @@
 
 # Basic
 name: "ari[Ma]'s Notebook"
-url: ""
+url: "arima-s-notebook"
 language: zh-Hans
 
 # URL
@@ -36,7 +36,7 @@ defaults:
 
 # Sass
 sass:
-  sass_dir: /assets
+  sass_dir: /assets/css
   style: :compressed
 
 # Highlighter
